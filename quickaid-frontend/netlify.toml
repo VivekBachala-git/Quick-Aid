@@ -1,9 +1,10 @@
-[build]
-  base    = "quickaid-frontend"
-  command = "npm run build"
-  publish = ".next"
+# netlify.toml
 
-# Redirect all routes to index.html (for client-side routing in Next.js)
+[build]
+  command = "npm run build && npx next export"
+  publish = "out"
+
+# Redirect all routes to index.html for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
