@@ -1,0 +1,10 @@
+[build]
+  base    = "quickaid-frontend"
+  command = "npm run build"
+  publish = ".next"
+
+# Redirect all routes to index.html (for client-side routing in Next.js)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
