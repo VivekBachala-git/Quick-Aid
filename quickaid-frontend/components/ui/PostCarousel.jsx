@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import { MapPinned, Trash2 } from "lucide-react";
+import { MapPinned, Trash2,  HandHelping, MapPin, Heart, Users, AlertTriangle } from "lucide-react";
 
 export default function PostCarousel() {
   const [posts, setPosts] = useState([]);
@@ -78,7 +78,7 @@ export default function PostCarousel() {
                       {post.description}
                     </p>
                     <p className="text-sm text-gray-500 flex items-center gap-1">
-                      <MapPinned className="w-4 h-4" />
+                      <MapPin className="w-4 h-4" />
                       {post.location} — {post.created_at}
                     </p>
                   </div>
